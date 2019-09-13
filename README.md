@@ -23,4 +23,4 @@ http :8080/greeting?name=Arun
 ```
 
 ## Blog Posts
-[https://medium.com/@arunvelsriram/jacoco-configuration-using-gradles-kotlin-dsl-67a8870b1c68](https://medium.com/@arunvelsriram/jacoco-configuration-using-gradles-kotlin-dsl-67a8870b1c68)
+[https://arunvelsriram.dev/jacoco-configuration-using-gradles-kotlin-dsl-ck09aktdc00159ys1kqbaz3cn](https://arunvelsriram.dev/jacoco-configuration-using-gradles-kotlin-dsl-ck09aktdc00159ys1kqbaz3cn)
