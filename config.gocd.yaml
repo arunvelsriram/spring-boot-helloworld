@@ -29,4 +29,11 @@ pipelines:
                 - exec:
                     command: docker
                     arguments:
-                      - ps
+                      - run
+                      - --rm
+                      - -v
+                      - "$PWD:/app"
+                      - --entrypoint
+                      - /app
+                      - adoptopenjdk/openjdk11
+                      - "./gradlew testCoverage"
