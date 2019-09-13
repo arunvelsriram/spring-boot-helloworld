@@ -1,0 +1,38 @@
+format_version: 5
+pipelines:
+  spring-boot-helloworld:
+    group: simple
+    materials:
+      spring-boot-hello-world:
+        git:
+        branch: master
+      myupstream:
+        pipeline: pipe2
+        stage: test
+    stages:
+      - build:
+          jobs:
+            test:
+              tasks:
+                - exec:
+                    command: ./gradlew
+                    arguments:
+                      - testCoverage
+  spring-boot-helloworld:
+    group: docker
+    materials:
+      spring-boot-hello-world:
+        git:
+        branch: master
+      myupstream:
+        pipeline: pipe2
+        stage: test
+    stages:
+      - build:
+          jobs:
+            test:
+              tasks:
+                - exec:
+                    command: docker
+                    arguments:
+                      - ps
