@@ -6,9 +6,6 @@ pipelines:
       spring-boot-hello-world:
         git: https://github.com/arunvelsriram/spring-boot-helloworld.git
         branch: master
-      myupstream:
-        pipeline: pipe2
-        stage: test
     stages:
       - build:
           jobs:
@@ -24,9 +21,6 @@ pipelines:
       spring-boot-hello-world:
         git: https://github.com/arunvelsriram/spring-boot-helloworld.git
         branch: master
-      myupstream:
-        pipeline: pipe2
-        stage: test
     stages:
       - build:
           jobs:
