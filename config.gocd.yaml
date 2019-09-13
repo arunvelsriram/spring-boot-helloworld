@@ -1,6 +1,6 @@
 format_version: 5
 pipelines:
-  spring-boot-helloworld:
+  spring-boot-helloworld-simple:
     group: simple
     materials:
       spring-boot-hello-world:
@@ -18,7 +18,7 @@ pipelines:
                     command: ./gradlew
                     arguments:
                       - testCoverage
-  spring-boot-helloworld:
+  spring-boot-helloworld-docker:
     group: docker
     materials:
       spring-boot-hello-world:
