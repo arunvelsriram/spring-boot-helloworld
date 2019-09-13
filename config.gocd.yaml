@@ -4,7 +4,7 @@ pipelines:
     group: simple
     materials:
       spring-boot-hello-world:
-        git:
+        git: https://github.com/arunvelsriram/spring-boot-helloworld.git
         branch: master
       myupstream:
         pipeline: pipe2
@@ -22,7 +22,7 @@ pipelines:
     group: docker
     materials:
       spring-boot-hello-world:
-        git:
+        git: https://github.com/arunvelsriram/spring-boot-helloworld.git
         branch: master
       myupstream:
         pipeline: pipe2
